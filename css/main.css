@@ -1,0 +1,743 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}     
+     
+  *::selection{
+        color: white;
+        background-color: #20c996;
+     }   
+     
+     .home{
+    /* background-color: fuchsia; */
+        width: 100%;
+        height:100vh;
+        background-image: url(../img/intro-bg.jpg);
+        background-size:cover;
+        /* border: 1px solid transparent; */
+        /* margin-bottom:20px; */
+       display: flex;
+       flex-wrap: wrap;
+       
+    }
+    .inner {
+    background-color: rgba(62,65,67,.7);
+    z-index: 50;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+       
+    }
+    .home-nav{
+        display: flex;
+       flex-direction:row;
+        /* background-color:red; */
+        width:100%;
+        justify-content: space-around;
+        
+    }   
+    
+    .logo{
+        width:30%;
+        /* background-color:transparent; */
+        vertical-align: top;
+        margin-top:20px;
+        
+    }
+    .logo img{
+        width: 20% ;
+        
+      
+    }
+    .list{
+        margin-top: 10px;
+        width:60%;
+        justify-self: center;
+        display: inline-block;
+        /* background-color:blueviolet; */}
+
+        .list ul{
+            list-style-type: none;
+        }
+        .list ul li{
+            margin: 10px;
+        
+        display: inline-block;
+        
+        }
+        .list ul li a{
+            font-size: 20;
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+.meme{width: 60px;
+height:100px;
+margin: auto;
+margin-top: 180px;
+border-radius: 30px;
+border: none;
+position: relative;
+
+}
+.meme::after{
+
+content:'\f078';
+font-family:"FontAwesome";
+
+
+
+position: absolute;
+top:0%;
+left:50%;
+transform: translatex(-50%);
+border-radius: 50%;
+animation: move 1.5s infinite;
+
+
+
+} 
+@keyframes move{
+0%{
+    opacity: 1;
+    top:10px;
+}
+
+
+100%{  top:60%;
+       opacity:0 ;   }
+
+}
+
+
+
+
+     .home-content{
+      color: white;
+      font-size: 25;
+       width: 30%;
+    margin: auto;
+    margin-top:30px; 
+    text-align: center;
+        }   
+
+        .home-content h1{
+            margin: 20px 0px;
+        } 
+        .btn{
+
+            width:150px;
+            height:50px;
+            margin-top: 20px;
+            border: solid 2px #20c997;
+            border-radius:75px;
+            background-color: transparent;
+            transition: all;
+
+           }
+
+ .btn:hover{
+      background-color:#20c997 ;
+     
+            
+     }
+
+    .btn a{
+
+            text-decoration: none;      color: #20c997;
+            font-size: 18;
+
+        }
+     .btn:hover a 
+        {
+
+       color: white;
+        }
+
+
+
+
+.about{
+
+    margin-top: 50px;
+    /* background-color: #ccc; */
+    /* width: 100%; */
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+ 
+  .child{
+   
+   font-size: 25;
+   margin-top: 20px;
+   width: 100%;
+   text-align: center;
+    
+} 
+.brd1{
+    width:70px;
+    margin: auto;
+    height:3px;
+    background-color: #20c997;} 
+
+
+.Simone{
+    width: 85%;
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: flex-start; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Sim1{
+    width: 60%;
+}
+.Sim1 h2{
+    margin-bottom: 15px;
+
+}
+.Sim1 p{ margin-bottom: 15px;
+font-size: 20;}
+.Sim2{
+    width:30%;
+    color: gray;
+    font-size: 20;
+}
+.Sim2  .name{
+ font-size: 23;
+ color: black;
+} 
+.brd {
+    width: 100%;
+    background-color: #eaeaea;
+    height: 1px;
+    margin: 10px auto;
+    display: inline-block;
+  }
+/* .Sim2 p{margin: 10px 0px;} */
+
+.btn1{
+width:200px;
+height:50px;
+margin-top: 20px;
+background-color: #20c997;
+border: none;
+border-radius:100px; 
+
+}
+.btn1 a{
+
+    text-decoration: none;     color: white;
+    font-size: 18;
+}  
+
+
+.btn1:hover a{  color: white;}
+.sim2 p a{
+
+    text-decoration: none;      color: #20c997;
+}
+
+.happy{
+width: 75%;
+align-self: flex-start;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+justify-content: center;
+margin-top: -50px;
+}
+.Year{
+    width: 25%;
+    text-align: center;
+    font-size: 25px;
+    border-right:  dotted 2px gray;
+    color: grey;
+    /* border-style: dotted; */
+}
+.year p{margin: 5px 0px;}
+
+.year h1{margin-top:  20px }
+
+
+.page3{
+    width: 100%;
+    margin-top: 50px;
+    background-color: #f8f9fa
+    ;
+    height: 700px;
+   
+    
+}
+.allitem{
+ width: 90%;
+ margin:auto  ;
+ /* height: 700px; */
+ display: flex;
+ justify-content:center;
+ /* justify-content: space-around; */
+gap:45px 70px;
+flex-direction:row;
+/* align-items: flex-start; */
+/* align-items: center; */
+margin-top:50px;
+flex-wrap: wrap; 
+
+}
+.item5{
+width:40%;
+font-size: 20;
+
+}
+
+.item5 h3{
+
+    margin-bottom: 10px;
+}
+
+.page4{
+    margin: 100px  0px;
+   
+}
+.sumary{ 
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-top: 100px;;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-around;
+}
+.ComputerScience
+ {  width:100%;
+    margin: 20px 0px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    
+}
+
+
+.UXDesigner
+{  width: 100%;
+   margin: 20px 0px;
+   border: solid 1px grey;
+   border-radius: 5px;
+}
+
+
+.sum2{  
+    padding: 20px;
+    width: 40%;
+     }
+
+.sum1 { 
+    width:40%;
+    padding: 20px;
+    margin-left:30px;
+    }
+
+.sum1 .ComputerScience{
+
+        padding: 20px ;
+       
+    }
+    .sum1 .ComputerScience h5{
+        font-size: 22;
+        color: #e56b45;
+        margin: 15px 0px;
+    }
+    .sum1 .ComputerScience p{
+
+        font-size: 18;
+        margin-bottom:  15px ;
+       
+    }
+
+
+    .sum1 .ComputerScience .butt{
+        padding: 5px 13px;
+        border-radius: 5px;
+        border: none;
+        background-color: #20c997;
+        color: #fff;
+    }
+   
+
+
+
+
+
+    .sum2 .UXDesigner{
+
+        padding: 20px;
+    }
+ 
+
+    .sum2 .UXDesigner h5{
+        font-size: 22;
+        color: #e56b45;
+        margin: 15px 0px;
+    }
+
+    .sum2 .UXDesigner p{
+
+        font-size: 18;
+        margin-bottom:  15px ;
+    }
+
+    .sum2 .UXDesigner .butt{
+        padding: 5px 13px;
+        border-radius: 5px;
+        border: none;
+        background-color: #20c997;
+    }
+    
+    
+
+
+    .Design{ 
+        /* background-color: #20c997; */
+        margin: 15px 0px;
+    }
+    
+    .Design .last{ float: right;}
+
+    .perc-bar{
+          display: flex;
+          height: 10px;
+          background-color: #e9ecef;
+          border-radius: 8px;
+          margin-bottom: 30px;
+          overflow: hidden;
+
+        }
+
+
+    .bar{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        justify-content: center;
+        background-color: #20c996;
+        overflow: hidden;
+        text-align: center;
+        white-space: nowrap;
+
+        }
+
+
+  .bar1{
+    width:550px ;
+  }
+  .bar2{
+    width:450px ;
+  }
+  .bar3{
+    width:420px ;
+  }
+  .bar4{
+    width: 370px;
+  }
+  .bar5{
+    width:585px ;
+  }
+
+.clr{
+    clear: both;
+}
+ 
+.allbtn{
+    width: 100%;
+    display: flex;justify-content: center;
+
+}
+.btn5{
+    width:210px;
+    margin-top: 20px;
+    height:55px;
+    border: none;
+    border-radius:100px; 
+    border: solid 2px gray;
+    background-color: transparent;
+    transition: all;
+    
+}.btn5 a{
+
+    text-decoration: none;     color:gray;
+    font-size: 18;
+}
+
+
+.btn5:hover{
+    background-color:gray ;      
+   }
+
+.btn5:hover a
+{
+    
+color: white;
+}
+
+.pragraph{
+
+    background-color: #f9f8fa;
+
+    text-align: center;
+   padding: 20px 0px;
+}
+.pragraph p{font-size:20;
+color: gray;}
+
+.parr{width: 100%;
+background-color: #f9f8fa;
+display: flex;
+justify-content: center;
+height: 1100px;
+
+}
+
+.hala1{background-color:#f8f9fa ;}
+
+
+.parr{margin-bottom: 80px;}
+
+.photos{
+        width:80%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    
+    }
+    .photo1{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .item{ width: 100%;
+           
+        display: flex;
+        flex-direction: column; 
+        position: relative; 
+       
+    }  
+.portof{font-size: 90;
+        font-weight: 800px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        color: #ccc;}
+
+
+ .What{
+     position: absolute;
+    align-self:center;
+    color: black;
+    font-size: 40;
+    font-weight: 600;
+    
+
+}
+.portof h2{opacity: .4;}
+
+
+.brd2{ 
+    position: absolute;
+    opacity: 1 !important;
+    width:90px;
+    margin: auto;
+    height:3px;
+    margin:100px;
+    background-color: #20c997;}
+
+
+     .layer{
+        width:100%;
+        height: 100% ;
+        background-color: rgba(62,65,67,.5);
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0px;
+        top:  0px;
+        left:  0;
+        overflow: hidden; 
+        margin-top: 10px;
+        border-radius: 5px;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+     }
+     .item:hover .layer{
+        opacity: 1;
+     }
+     .layer h4{margin-bottom: 10px;}
+
+
+
+    .photo1 img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .photo1 .img1{
+        margin-top: 20px ;
+
+    }
+    .Client{
+         width: 100%;
+         height: 700px;
+         display: flex; 
+         justify-content: center;
+
+    }
+    .cli1{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 600px;
+       justify-content: space-between;
+    }
+    .cli2{
+
+        width: 49%;
+        
+        display: flex;
+        flex-direction: column;align-items:flex-start;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        
+    }
+    .cli2 .part1{
+        
+        width:80%;
+        padding: 20px  40px;
+    }
+    .cli2 .part1 p{ font-size: 18;}
+    .cli2 .part2 p{ font-size: 18;}
+    .part2{ 
+        width:100%;
+        padding:  30px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 20px;
+    }
+
+.part2 .pic{width: 12%;}
+/* .part2 .con{width:50%;  padding-top: 20px;} */
+.part2 .con h5{font-size: 18; margin-top:15px;}
+.part2 .con p{ font-size: 18; margin-top:10px;}
+    .pic img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    .Get{
+
+
+        width: 100%;
+        background-color: #f8f9fa;
+        display: flex;
+        height: auto;
+        justify-content: center;
+    }
+    .get1{
+
+
+        width: 90%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        column-gap:80px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .get1 .getf{width:15%; 
+        height:300px; 
+        padding: 0px 10px;}
+
+
+    .get1 .getl{width: 75%; 
+                height: 300px;
+               
+            
+            
+            }
+    .get1 .getf p{margin-top: 15px;}
+    .get1 .getf h3{margin: 15px 0px;}
+
+
+    .input1{width:95%;
+    display: flex; 
+    flex-direction: row;
+    margin-right:  70px;
+} 
+.input1 .in{width:90%;
+display: flex;
+justify-content: center;
+}
+.input1 .in  input{ width:90%; 
+height: 50px;
+ border-radius: 5px; padding-left: 10px;}
+
+
+ .input2 textarea{width:90%;
+                height: 150px;
+                border-radius: 5px; 
+                margin: 20px 20px;}
+
+
+
+.input3{   width: 99%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            column-gap: 20px;
+}
+.btn6{
+    width:210px;
+    margin-top: 20px;
+    height:55px;
+    border: none;
+    margin: auto;
+    border-radius:100px; 
+    font-size: 18;
+    color: #fff;
+    background-color: #20c996;
+    
+}
+.hi{background-color: #f8f9fa;
+}
+.hi h2{padding-top:70px;}
+
+.hala{width: 80%;
+margin: 30px auto;}
+.ahmed{ float: left;}
+.saad{ float: right;}
+.saad a{
+    padding-left: 20px;
+    text-decoration: none;   
+    color:black;
+    font-size: 18;
+transition: color;
+}
+a:hover{color: #20c996;}
+span a{text-decoration: none; }
+span{font-size: 18;}
